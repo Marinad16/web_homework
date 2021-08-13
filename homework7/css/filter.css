@@ -1,0 +1,320 @@
+/*font-family: 'Quicksand', sans-serif;*/
+tml {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.filter-form {
+    width: 354px;
+    padding: 0 45px;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter-section {
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.filter-title {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+
+.filter-title::after {
+    content: "";
+    display: table;
+    background-color: rgb(42, 42, 42);
+    min-width: 262px;
+    height: 1px;
+}
+
+/*CATEGORY FILTER*/
+.categories-filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories-filter-label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.categories-filter-label::before {
+    display: inline-block;
+    content: "";
+    margin-right: 12px;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/chevron-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.categories-filter-type {
+    font-size: 13px;
+    color: #2a2a2a;
+    line-height: 34px;
+}
+
+.categories-filter-count {
+    display: inline-block;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.categories-filter-check:checked + .categories-filter-label::before {
+    background-image: url(../img/chevron-right-active.svg);
+}
+
+.categories-filter-check:checked + .categories-filter-label {
+    padding-left: 12px;
+}
+
+.categories-filter-check:checked + .categories-filter-label .categories-filter-type {
+    color: #d58e32;
+}
+
+.categories-filter-check:checked + .categories-filter-label .categories-filter-count {
+    background-color: #d58e32;
+}
+
+/*PRICE FILTER*/
+
+.price-filter {
+    margin: 0 auto;
+}
+.range-controle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.scale {
+    flex: 0 0 100%;
+    height: 8px;
+    border-width: 1px;
+    border-color: rgb(212, 212, 212);
+    border-style: solid;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.bar {
+    background-color: rgb(42, 42, 42);
+    height: 6px;
+    border-radius: 2px;
+}
+  
+.range-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    border-width: 3px;
+    border-color: rgb(213, 142, 50);
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.range-toggle-max {
+    margin-left: 235px;
+}
+
+.price-controle {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price-button {
+    text-transform: uppercase;
+    background-color: rgb(213, 142, 50);
+    cursor: pointer;
+    padding: 0 15px;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    line-height: 32px;
+}
+  
+.price-range input{
+    width: 112px;
+    height: 32px;
+    border-width: 1px;
+    border-color: rgb(225, 225, 225);
+    border-style: solid;
+    text-align: center;
+}
+
+/*COLOR FILTER*/
+
+.color-filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.color-filter-label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.color-filter-label::before {
+    display: inline-block;
+    content: "";
+    margin-right: 12px;
+    width: 14px;
+    height: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.red::before {
+    background-image: url(../img/square-red.svg);
+}
+
+.black::before {
+    background-image: url(../img/square-black.svg);
+}
+
+.yellow::before {
+    background-image: url(../img/square-yellow.svg);
+}
+
+.blue::before {
+    background-image: url(../img/square-blue.svg);
+}
+
+.pink::before {
+    background-image: url(../img/square-pink.svg);
+}
+
+.green::before {
+    background-image: url(../img/square-green.svg);
+}
+
+.color-filter-type {
+    font-size: 13px;
+    color: #2a2a2a;
+    line-height: 34px;
+}
+
+.color-filter-check:checked + .color-filter-label {
+    padding-left: 12px;
+}
+
+.color-filter-check:checked + .color-filter-label .color-filter-type {
+    color: #d58e32;
+}
+
+/*SIZE FILTER*/
+
+.size-filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.size-filter-label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.size-filter-label::before {
+    display: inline-block;
+    content: "";
+    margin-right: 12px;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/square-regular.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.size-filter-type {
+    font-size: 13px;
+    color: #2a2a2a;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.size-filter-count {
+    display: inline-block;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.size-filter-check:checked + .size-filter-label::before {
+    background-image: url(../img/check-square-solid.svg);
+}
+
+.size-filter-check:checked + .size-filter-label {
+    padding-left: 12px;
+}
+
+.size-filter-check:checked + .size-filter-label .size-filter-type {
+    color: #d58e32;
+}
+
+.size-filter-check:checked + .size-filter-label .size-filter-count {
+    background-color: #d58e32;
+}

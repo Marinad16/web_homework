@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" class="filter-form">
+        <section class="filter-section">
+            <h2 class="filter-title">Filter By Categories</h2>
+
+            <ul class="categories-filter-list">
+                <li class="categories-filter-list-item">
+                    <input class="categories-filter-check visually-hidden" type="checkbox" value="furniture" name="category" id="furniture">
+                    <label class="categories-filter-label" for="furniture">
+                        <span class="categories-filter-type">Furniture</span>
+                        <span class="categories-filter-count">3</span>
+                    </label>
+                </li>
+
+                <li class="categories-filter-list-item">
+                    <input class="categories-filter-check visually-hidden" type="checkbox" value="sofa" name="category" id="sofa">
+                    <label class="categories-filter-label" for="sofa">
+                        <span class="categories-filter-type">Sofa</span>
+                        <span class="categories-filter-count">4</span>
+                    </label>
+                </li>
+
+                <li class="categories-filter-list-item">
+                    <input class="categories-filter-check visually-hidden" type="checkbox" value="chair" name="category" id="chair">
+                    <label class="categories-filter-label" for="chair">
+                        <span class="categories-filter-type">Chair</span>
+                        <span class="categories-filter-count">5</span>
+                    </label>
+                </li>
+
+                <li class="categories-filter-list-item">
+                    <input class="categories-filter-check visually-hidden" type="checkbox" value="table" name="category" id="table">
+                    <label class="categories-filter-label" for="table">
+                        <span class="categories-filter-type">Table</span>
+                        <span class="categories-filter-count">5</span>
+                    </label>
+                </li>
+
+                <li class="categories-filter-list-item">
+                    <input class="categories-filter-check visually-hidden" type="checkbox" value="bedroom" name="category" id="bedroom">
+                    <label class="categories-filter-label" for="bedroom">
+                        <span class="categories-filter-type">Bedroom</span>
+                        <span class="categories-filter-count">5</span>
+                    </label>
+                </li>
+            </ul>
+
+        </section>
+        <section class="filter-section">
+            <h2 class="filter-title">Filter By Price</h2>
+
+            <div class="price-filter">
+                <div class="range-controle">
+                    <div class="scale">
+                        <div class="bar" style="width: 70%;"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <div class="price-controle">
+                    <button class="price-button">Filter</button>
+                    <label for="" class="price-range">
+                        <input type="text" value="135-500" name="price_range">
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="filter-section">
+            <h2 class="filter-title">Filter By Color</h2>
+
+            <ul class="color-filter-list">
+                <li class="color-filter-list-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="red" name="category" id="red">
+                    <label class="color-filter-label red" for="red">
+                        <span class="color-filter-type">Red</span>
+                    </label>
+                </li>
+                <li class="color-filter-list-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="black" name="category" id="black">
+                    <label class="color-filter-label black" for="black">
+                        <span class="color-filter-type">Black</span>
+                    </label>
+                </li>
+                <li class="color-filter-list-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="yellow" name="category" id="yellow">
+                    <label class="color-filter-label yellow" for="yellow">
+                        <span class="color-filter-type">Yellow</span>
+                    </label>
+                </li>
+                <li class="color-filter-list-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="blue" name="category" id="blue">
+                    <label class="color-filter-label blue" for="blue">
+                        <span class="color-filter-type">Blue</span>
+                    </label>
+                </li>
+                <li class="color-filter-list-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="pink" name="category" id="pink">
+                    <label class="color-filter-label pink" for="pink">
+                        <span class="color-filter-type">Pink</span>
+                    </label>
+                </li>
+                <li class="color-filter-list-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="green" name="category" id="green">
+                    <label class="color-filter-label green" for="green">
+                        <span class="color-filter-type">Green</span>
+                    </label>
+                </li>
+            </ul>
+
+        </section>
+        <section class="filter-section">
+            <h2 class="filter-title">Filter By Size</h2>
+
+            <ul class="size-filter-list">
+                <li class="size-filter-list-item">
+                    <input class="size-filter-check visually-hidden" type="checkbox" value="s" name="category" id="s">
+                    <label class="size-filter-label" for="s">
+                        <span class="size-filter-type">s</span>
+                        <span class="size-filter-count">3</span>
+                    </label>
+                </li>
+                <li class="size-filter-list-item">
+                    <input class="size-filter-check visually-hidden" type="checkbox" value="m" name="category" id="m">
+                    <label class="size-filter-label" for="m">
+                        <span class="size-filter-type">m</span>
+                        <span class="size-filter-count">3</span>
+                    </label>
+                </li>
+                <li class="size-filter-list-item">
+                    <input class="size-filter-check visually-hidden" type="checkbox" value="l" name="category" id="l">
+                    <label class="size-filter-label" for="l">
+                        <span class="size-filter-type">l</span>
+                        <span class="size-filter-count">3</span>
+                    </label>
+                </li>
+                <li class="size-filter-list-item">
+                    <input class="size-filter-check visually-hidden" type="checkbox" value="xl" name="category" id="xl">
+                    <label class="size-filter-label" for="xl">
+                        <span class="size-filter-type">xl</span>
+                        <span class="size-filter-count">3</span>
+                    </label>
+                </li>
+                <li class="size-filter-list-item">
+                    <input class="size-filter-check visually-hidden" type="checkbox" value="xx" name="category" id="xx">
+                    <label class="size-filter-label" for="xx">
+                        <span class="size-filter-type">xx</span>
+                        <span class="size-filter-count">3</span>
+                    </label>
+                </li>
+            </ul>
+    </form>
+</body>
+</html>
